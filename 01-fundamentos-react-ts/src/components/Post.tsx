@@ -1,4 +1,4 @@
-import { useState } from 'react'; 
+import { FormEvent, useState, ChangeEvent, InvalidEvent } from 'react'; 
 import{ format, formatDistanceToNow } from 'date-fns';
 import {ptBR} from 'date-fns/locale/pt-BR';
 
@@ -7,8 +7,24 @@ import { Comment } from './Comentario.jsx';
 
 import styles from './Post.module.css';
 
+interface Author {
+    name: string;
+    role: string;
+    avatarUrl: string;
+}
 
-export function Post({ author, publishedAt, content }) {
+interface Content {
+    type: 'paragraph' | 'link';
+    content: string
+}
+
+interface PostProps {
+    author: Author;
+    publishedAt: Date;
+    content: Content[];
+}
+
+export function Post({ author, publishedAt, content }: PostProps) {
     const [comments, setComments] = useState([
         'Post Muit bom.'
     ])
@@ -27,7 +43,7 @@ export function Post({ author, publishedAt, content }) {
         addSuffix: true
     })
 
-    function handleCreateNewComment() {
+    function handleCreateNewComment(event: FormEvent) {
         event.preventDefault()
         
 
@@ -35,18 +51,19 @@ export function Post({ author, publishedAt, content }) {
         setNewCommentText('');
     }
 
-    function handleNewCommentChange() {
+    function handleNewCommentChange(event: ChangeEvent<HTMLTextAreaElement>) {
         event.target.setCustomValidity('')
         setNewCommentText(event.target.value)
     }
-    function deleteComment(commentToDelete){
+
+    function deleteComment(commentToDelete: string){
         const commentsWithoutDeletedOne = comments.filter(comment => {
             return comment != commentToDelete;
         })
         setComments(commentsWithoutDeletedOne);
     }
 
-    function handleNewcommentInvalid(){
+    function handleNewcommentInvalid(event: InvalidEvent<HTMLTextAreaElement>){
         event.target.setCustomValidity('Esse campo é obrigatorio!')
     }
     const isNewCommentEmpty = newCommentText.length === 0
