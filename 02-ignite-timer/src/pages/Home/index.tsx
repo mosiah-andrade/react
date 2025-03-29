@@ -29,20 +29,20 @@ interface CycleContextType{
     setSecondsPassed: (seconds: number) => void
 }
 
+export const CyclesContext = createContext({} as CycleContextType)
 
 const newCycleFormValidationSchema = zod.object({
     task: zod.string().min(1, 'Informe a tarefa'),
     MinutesAmount: zod
-    .number()
-    .min(5, 'O ciclo precisa ser de no min 5 minutos')
-    .max(60, 'O ciclo precisa ser no maximo de 60 minutos')
+        .number()
+        .min(5, 'O ciclo precisa ser de no min 5 minutos')
+        .max(60, 'O ciclo precisa ser no maximo de 60 minutos')
 })
 
 
 type NewCycleFormData = zod.infer<typeof newCycleFormValidationSchema>
 
 export function Home() {
-    export const CyclesContext = createContext({} as CycleContextType)
     
     const [cycles, setcycle] = useState<Cycle[]>([])
     const [activeCycleId, setActiveCycleId] = useState<string | null>(null)
