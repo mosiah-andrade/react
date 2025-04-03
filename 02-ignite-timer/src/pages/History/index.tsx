@@ -20,54 +20,28 @@ export function History() {
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Tarefa</td>
-                                <td>20 minutos</td>
-                                <td>Há 2 mêses</td>
-                                <Status statusColor="green">Concluido</Status>
-                            </tr>
-                            <tr>
-                                <td>Tarefa</td>
-                                <td>20 minutos</td>
-                                <td>Há 2 mêses</td>
-                                <Status statusColor="green">Concluido</Status>
-                            </tr>
-                            <tr>
-                                <td>Tarefa</td>
-                                <td>20 minutos</td>
-                                <td>Há 2 mêses</td>
-                                <Status statusColor="green">Concluido</Status>
-                            </tr>
-                            <tr>
-                                <td>Tarefa</td>
-                                <td>20 minutos</td>
-                                <td>Há 2 mêses</td>
-                                <Status statusColor="green">Concluido</Status>
-                            </tr>
-                            <tr>
-                                <td>Tarefa</td>
-                                <td>20 minutos</td>
-                                <td>Há 2 mêses</td>
-                                <Status statusColor="green">Concluido</Status>
-                            </tr>
-                            <tr>
-                                <td>Tarefa</td>
-                                <td>20 minutos</td>
-                                <td>Há 2 mêses</td>
-                                <Status statusColor="green">Concluido</Status>
-                            </tr>
-                            <tr>
-                                <td>Tarefa</td>
-                                <td>20 minutos</td>
-                                <td>Há 2 mêses</td>
-                                <Status statusColor="green">Concluido</Status>
-                            </tr>
-                            <tr>
-                                <td>Tarefa</td>
-                                <td>20 minutos</td>
-                                <td>Há 2 mêses</td>
-                                <Status statusColor="green">Concluido</Status>
-                            </tr>
+                            {cycles.map(cycle => {
+                                return (
+                                    <tr key={cycle.id}>
+                                        <td>{cycle.task}</td>
+                                        <td>{cycle.MinutesAmount} minutos</td>
+                                        <td>{cycle.startDate.toDateString()}</td>
+                                        <td>
+                                            { cycle.finishedDate && (
+                                                <Status statusColor="green">Concluído</Status>
+                                            )}
+
+                                            {cycle.interruptedDate && (
+                                                <Status statusColor="red">Interrompido</Status>
+                                            )}
+
+                                            {!cycle.finishedDate && (!cycle.interruptedDate) && (
+                                                <Status statusColor="yellow">Em andamento</Status>
+                                            )}
+                                        </td>
+                                    </tr>
+                                )
+                            })}
                         </tbody>
                     </table>
                 </HistoryList>
