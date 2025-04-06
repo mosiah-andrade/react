@@ -1,6 +1,7 @@
 import { ThemeProvider } from "styled-components"
 import { defaultTheme } from "./styles/theme/default"
 import { GlobalStyle } from "./styles/global"
+import { Transactions } from "./pages/Transactions"
 
 
 export function App() {
@@ -10,7 +11,7 @@ export function App() {
 
       <GlobalStyle />
       
-      <h1>Hello world</h1>
+      <Transactions />
 
     </ThemeProvider>
   )
