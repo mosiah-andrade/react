@@ -2,8 +2,34 @@ import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
 import { SearchForm } from "./components/searchForm";
 import { PriceHightlight, TransactionContainer, TransactionTable } from "./styles";
+import { useState, useEffect } from "react";
+
+
+interface Transaction {
+    id: number;
+    description: string;
+    type: 'income'| 'outcome';
+    price: number;
+    category: string;
+    createdAt: string;
+}
+
 
 export function Transactions() {
+    const [transactions, setTransactions] = useState<Transaction>([])
+
+
+    async function loadTransactions() {
+        const response = await fetch('https://expert-train-v6rjj7gq45xpcx996-4000.app.github.dev/')
+        const data = await response.json()
+        setTransactions(data)
+        console.log(data)
+    }
+
+    useEffect(() => {
+        loadTransactions()
+    }, [])
+
     return (
         <div>
             <Header />
@@ -13,18 +39,16 @@ export function Transactions() {
                 <SearchForm/>
                 <TransactionTable>
                     <tbody>
-                        <tr>
-                            <td width="50%">Desenvolvimento de site</td>
-                            <PriceHightlight variant="income">R$ 12.000,00</PriceHightlight>
-                            <td>Venda</td>
-                            <td>13/04/2022</td>
-                        </tr>
-                        <tr>
-                            <td width="50%">Netflix</td>
-                            <PriceHightlight variant="outcome">- R$ 100,00</PriceHightlight>
-                            <td>Entretendimento</td>
-                            <td>10/04/2022</td>
-                        </tr>
+                        {transactions.map(transaction => {
+                            return (
+                                <tr key={transaction.id}>
+                                    <td width="50%">{transaction.description}</td>
+                                        <PriceHightlight variant={transaction.type}>R$ {transaction.price}</PriceHightlight>
+                                    <td>{transaction.category}</td>
+                                    <td>{transaction.createAt}</td>
+                                </tr>
+                            )
+                        })}
                     
                     </tbody>
                 </TransactionTable>
