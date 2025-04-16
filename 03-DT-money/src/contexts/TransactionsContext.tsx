@@ -6,7 +6,7 @@ interface Transaction {
     type: 'income' | 'outcome'
     price: number
     category: string
-    createdAt: string
+    createdAt: Date
   }
 
 interface TransactionsContextType {
@@ -23,10 +23,15 @@ export function TransactionsProvider( {children}: TransactionsProviderProps) {
     const [transactions, setTransactions] = useState<Transaction[]>([])
 
   async function loadTransactions() {
-    const response = await fetch('http://localhost:4000/transactions')
-    const data = await response.json()
-    
-    setTransactions(data)
+      const response = await fetch('http://localhost:4000/transactions');
+      const rawData = await response.json();
+  
+      const formattedData = rawData.map((transaction: any) => ({
+          ...transaction,
+          createdAt: new Date(transaction.createAt), // Fix the typo and convert to Date
+      }));
+  
+      setTransactions(formattedData);
   }
 
   useEffect(() => {
