@@ -15,8 +15,8 @@ export const SearchFormContainer =styled.form`
         &::placeholder {
             color: ${props => props.theme["gray-500"]}
         }
-
-        button{
+}
+        #buscar{
             display: flex;
             align-items: center;
             gap: 0.75rem;
