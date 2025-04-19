@@ -6,10 +6,9 @@
   "scripts": {
     "dev": "vite",
     "dev:server": "npx json-server server.json -p 4000 w ",
-    "lint":  "npx eslint src --ext .tsx,.ts",
+    "lint": "npx eslint src --ext .tsx,.ts",
     "lint:fix": "npx eslint src --ext .tsx,.ts --fix",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -21,7 +20,9 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.55.0",
+    "scheduler": "^0.26.0",
     "styled-components": "^6.1.17",
+    "use-context-selector": "^2.0.0",
     "zod": "^3.24.3"
   },
   "devDependencies": {
