@@ -1,165 +1,188 @@
 {
-    "transactions": [
-      {
-        "id": 1,
-        "description": "Desenvolvimento de site",
-        "type": "income",
-        "category": "Venda",
-        "price": 14000,
-        "createdAt": "2025-04-10T19:39:19.469Z"
-      },
-      {
-        "id": 2,
-        "description": "Hamburguer",
-        "type": "outcome",
-        "category": "Alimentação",
-        "price": 60,
-        "createdAt": "2025-04-04T19:39:19.469Z"
-      },
-      {
-        "id": 3,
-        "description": "Ignite Rocketseat",
-        "type": "outcome",
-        "category": "Educação",
-        "price": 1980,
-        "createdAt": "2025-03-04T19:39:19.469Z"
-      },
-      {
-        "id": 4,
-        "description": "Logo para cliente",
-        "type": "income",
-        "category": "Serviço",
-        "price": 500,
-        "createdAt": "2025-04-12T14:15:00.000Z"
-      },
-      {
-        "id": 5,
-        "description": "Assinatura Figma",
-        "type": "outcome",
-        "category": "Ferramentas",
-        "price": 120,
-        "createdAt": "2025-04-02T09:00:00.000Z"
-      },
-      {
-        "id": 6,
-        "description": "Venda de e-book",
-        "type": "income",
-        "category": "Produto Digital",
-        "price": 49,
-        "createdAt": "2025-04-05T11:30:00.000Z"
-      },
-      {
-        "id": 7,
-        "description": "Uber para reunião",
-        "type": "outcome",
-        "category": "Transporte",
-        "price": 32,
-        "createdAt": "2025-04-06T16:45:00.000Z"
-      },
-      {
-        "id": 8,
-        "description": "Compra de domínio",
-        "type": "outcome",
-        "category": "Infraestrutura",
-        "price": 80,
-        "createdAt": "2025-04-01T10:00:00.000Z"
-      },
-      {
-        "id": 9,
-        "description": "Design de interface",
-        "type": "income",
-        "category": "Serviço",
-        "price": 900,
-        "createdAt": "2025-03-29T13:30:00.000Z"
-      },
-      {
-        "id": 10,
-        "description": "Almoço com cliente",
-        "type": "outcome",
-        "category": "Alimentação",
-        "price": 75,
-        "createdAt": "2025-03-27T12:00:00.000Z"
-      },
-      {
-        "id": 11,
-        "description": "Venda de template",
-        "type": "income",
-        "category": "Produto Digital",
-        "price": 150,
-        "createdAt": "2025-03-20T15:20:00.000Z"
-      },
-      {
-        "id": 12,
-        "description": "Café coworking",
-        "type": "outcome",
-        "category": "Alimentação",
-        "price": 18,
-        "createdAt": "2025-03-22T09:45:00.000Z"
-      },
-      {
-        "id": 13,
-        "description": "Mentoria online",
-        "type": "income",
-        "category": "Serviço",
-        "price": 300,
-        "createdAt": "2025-03-15T18:00:00.000Z"
-      },
-      {
-        "id": 14,
-        "description": "Conta de energia",
-        "type": "outcome",
-        "category": "Casa",
-        "price": 140,
-        "createdAt": "2025-03-13T08:00:00.000Z"
-      },
-      {
-        "id": 15,
-        "description": "Venda de plugin",
-        "type": "income",
-        "category": "Produto Digital",
-        "price": 200,
-        "createdAt": "2025-03-10T19:00:00.000Z"
-      },
-      {
-        "id": 16,
-        "description": "Assinatura Canva Pro",
-        "type": "outcome",
-        "category": "Ferramentas",
-        "price": 35,
-        "createdAt": "2025-03-08T07:30:00.000Z"
-      },
-      {
-        "id": 17,
-        "description": "Desenvolvimento de landing page",
-        "type": "income",
-        "category": "Serviço",
-        "price": 1200,
-        "createdAt": "2025-03-05T17:00:00.000Z"
-      },
-      {
-        "id": 18,
-        "description": "Café e lanche",
-        "type": "outcome",
-        "category": "Alimentação",
-        "price": 25,
-        "createdAt": "2025-03-03T10:15:00.000Z"
-      },
-      {
-        "id": 19,
-        "description": "Venda de curso online",
-        "type": "income",
-        "category": "Educação",
-        "price": 350,
-        "createdAt": "2025-02-28T21:00:00.000Z"
-      },
-      {
-        "id": 20,
-        "description": "Compra de mouse",
-        "type": "outcome",
-        "category": "Equipamentos",
-        "price": 100,
-        "createdAt": "2025-02-25T14:00:00.000Z"
-      }
-    ]
-  }
-  
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 14000,
+      "createdAt": "2025-04-10T19:39:19.469Z"
+    },
+    {
+      "id": 2,
+      "description": "Hamburguer",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 60,
+      "createdAt": "2025-04-04T19:39:19.469Z"
+    },
+    {
+      "id": 3,
+      "description": "Ignite Rocketseat",
+      "type": "outcome",
+      "category": "Educação",
+      "price": 1980,
+      "createdAt": "2025-03-04T19:39:19.469Z"
+    },
+    {
+      "id": 4,
+      "description": "Logo para cliente",
+      "type": "income",
+      "category": "Serviço",
+      "price": 500,
+      "createdAt": "2025-04-12T14:15:00.000Z"
+    },
+    {
+      "id": 5,
+      "description": "Assinatura Figma",
+      "type": "outcome",
+      "category": "Ferramentas",
+      "price": 120,
+      "createdAt": "2025-04-02T09:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "description": "Venda de e-book",
+      "type": "income",
+      "category": "Produto Digital",
+      "price": 49,
+      "createdAt": "2025-04-05T11:30:00.000Z"
+    },
+    {
+      "id": 7,
+      "description": "Uber para reunião",
+      "type": "outcome",
+      "category": "Transporte",
+      "price": 32,
+      "createdAt": "2025-04-06T16:45:00.000Z"
+    },
+    {
+      "id": 8,
+      "description": "Compra de domínio",
+      "type": "outcome",
+      "category": "Infraestrutura",
+      "price": 80,
+      "createdAt": "2025-04-01T10:00:00.000Z"
+    },
+    {
+      "id": 9,
+      "description": "Design de interface",
+      "type": "income",
+      "category": "Serviço",
+      "price": 900,
+      "createdAt": "2025-03-29T13:30:00.000Z"
+    },
+    {
+      "id": 10,
+      "description": "Almoço com cliente",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 75,
+      "createdAt": "2025-03-27T12:00:00.000Z"
+    },
+    {
+      "id": 11,
+      "description": "Venda de template",
+      "type": "income",
+      "category": "Produto Digital",
+      "price": 150,
+      "createdAt": "2025-03-20T15:20:00.000Z"
+    },
+    {
+      "id": 12,
+      "description": "Café coworking",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 18,
+      "createdAt": "2025-03-22T09:45:00.000Z"
+    },
+    {
+      "id": 13,
+      "description": "Mentoria online",
+      "type": "income",
+      "category": "Serviço",
+      "price": 300,
+      "createdAt": "2025-03-15T18:00:00.000Z"
+    },
+    {
+      "id": 14,
+      "description": "Conta de energia",
+      "type": "outcome",
+      "category": "Casa",
+      "price": 140,
+      "createdAt": "2025-03-13T08:00:00.000Z"
+    },
+    {
+      "id": 15,
+      "description": "Venda de plugin",
+      "type": "income",
+      "category": "Produto Digital",
+      "price": 200,
+      "createdAt": "2025-03-10T19:00:00.000Z"
+    },
+    {
+      "id": 16,
+      "description": "Assinatura Canva Pro",
+      "type": "outcome",
+      "category": "Ferramentas",
+      "price": 35,
+      "createdAt": "2025-03-08T07:30:00.000Z"
+    },
+    {
+      "id": 17,
+      "description": "Desenvolvimento de landing page",
+      "type": "income",
+      "category": "Serviço",
+      "price": 1200,
+      "createdAt": "2025-03-05T17:00:00.000Z"
+    },
+    {
+      "id": 18,
+      "description": "Café e lanche",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 25,
+      "createdAt": "2025-03-03T10:15:00.000Z"
+    },
+    {
+      "id": 19,
+      "description": "Venda de curso online",
+      "type": "income",
+      "category": "Educação",
+      "price": 350,
+      "createdAt": "2025-02-28T21:00:00.000Z"
+    },
+    {
+      "id": 20,
+      "description": "Compra de mouse",
+      "type": "outcome",
+      "category": "Equipamentos",
+      "price": 100,
+      "createdAt": "2025-02-25T14:00:00.000Z"
+    },
+    {
+      "description": "ads",
+      "price": 1,
+      "category": "2",
+      "type": "income",
+      "createdAt": "2025-04-19T00:57:41.020Z",
+      "id": 21
+    },
+    {
+      "description": "dsad",
+      "price": 12,
+      "category": "1222",
+      "type": "outcome",
+      "createdAt": "2025-04-19T01:21:44.150Z",
+      "id": 22
+    },
+    {
+      "description": "xfd",
+      "price": 22,
+      "category": "1222",
+      "type": "outcome",
+      "createdAt": "2025-04-19T01:21:58.930Z",
+      "id": 23
+    }
+  ]
+}
