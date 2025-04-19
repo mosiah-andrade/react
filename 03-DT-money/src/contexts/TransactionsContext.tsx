@@ -68,8 +68,7 @@ const createTransaction = useCallback(
         })
 
         setTransactions((state) => [ response.data, ...transactions])
-    }, 
-    [],
+    }, [],
 )
 
   useEffect(() => {
