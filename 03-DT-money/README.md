@@ -52,3 +52,61 @@ export default tseslint.config({
   },
 })
 ```
+# 💰 DT Money
+
+Aplicação de controle financeiro desenvolvida no módulo "Consumo de API e performance no ReactJS" do curso Ignite da Rocketseat. O objetivo é permitir o registro de entradas e saídas financeiras, oferecendo uma visão clara das finanças pessoais.
+
+## 🛠️ Funcionalidades
+
+- **Cadastro de transações**: Registre receitas e despesas com categorias personalizadas.
+- **Listagem de transações**: Visualize suas transações com filtros por tipo e categoria.
+- **Resumo financeiro**: Acompanhe o saldo total, receitas e despesas.
+- **Persistência de dados**: Utilize um servidor local para armazenar as transações.
+
+## ⚙️ Tecnologias Utilizadas
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Styled Components](https://styled-components.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Zod](https://github.com/colinhacks/zod)
+- [Immer](https://immerjs.github.io/immer/)
+- [date-fns](https://date-fns.org/)
+- [Phosphor Icons](https://phosphoricons.com/)
+- [React Router DOM](https://reactrouter.com/)
+
+## 📦 Como Executar o Projeto
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/mosiah-andrade/react.git
+cd react/03-DT-money
+```
+
+### 2. Instale as dependências
+
+```bash
+npm install
+# ou
+yarn
+```
+
+### 3. Inicie o servidor de desenvolvimento
+
+```bash
+npm run dev
+# ou
+yarn dev
+```
+
+O projeto estará disponível em [http://localhost:5173](http://localhost:5173).
+
+## 🎨 Layout
+
+Você pode visualizar o layout do projeto através deste [link do Figma](https://www.figma.com/).
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
