@@ -52,3 +52,61 @@ export default tseslint.config({
   },
 })
 ```
+
+# ⏱️ Ignite Timer
+
+Este projeto é uma aplicação de contador Pomodoro desenvolvida durante o módulo "Criando SPAs com ReactJS" do curso Ignite da Rocketseat. O objetivo é auxiliar na gestão de tempo para aumentar a produtividade.
+
+## 🛠️ Funcionalidades
+
+- **Iniciar novo ciclo**: Comece um novo ciclo Pomodoro com duração configurável.
+- **Cancelar ciclo**: Interrompa o ciclo atual a qualquer momento.
+- **Histórico de ciclos**: Visualize os ciclos anteriores com suas respectivas durações.
+
+## ⚙️ Tecnologias Utilizadas
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)
+- [Vite](https://vitejs.dev/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Zod](https://github.com/colinhacks/zod)
+- [Immer](https://immerjs.github.io/immer/)
+- [date-fns](https://date-fns.org/)
+- [Phosphor Icons](https://phosphoricons.com/)
+- [React Router DOM](https://reactrouter.com/)
+
+## 📦 Como Executar o Projeto
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/mosiah-andrade/react.git
+cd react/02-ignite-timer
+```
+
+### 2. Instale as dependências
+
+```bash
+npm install
+# ou
+yarn
+```
+
+### 3. Inicie o servidor de desenvolvimento
+
+```bash
+npm run dev
+# ou
+yarn dev
+```
+
+O projeto estará disponível em [http://localhost:5173](http://localhost:5173).
+
+## 🎨 Layout
+
+Você pode visualizar o layout do projeto através deste [link do Figma](https://www.figma.com/).
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
